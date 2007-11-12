@@ -1,9 +1,9 @@
 %define tarname aurora
 %define name gtk-aurora-engine
 %define version 1.2
-%define release %mkrel 2
+%define release %mkrel 3
 
-%define libname lib%{name}
+%define libname %mklibname %{name}
 
 %define gtkbinaryver %(if $([ -x %{_bindir}/pkg-config ] && pkg-config --exists gtk+-2.0); then pkg-config --variable=gtk_binary_version gtk+-2.0; else echo 0; fi)
 
