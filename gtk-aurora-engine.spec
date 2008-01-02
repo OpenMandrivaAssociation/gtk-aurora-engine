@@ -16,6 +16,7 @@ Source1: Gtkrc_themes.tar.bz2
 License: GPL
 Group: 	 Graphical desktop/Other
 Url: 	 http://www.gnome-look.org
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires: %{libname} = %{version}
 BuildRequires: gtk2-devel >= 2.10
 
