@@ -1,7 +1,7 @@
 %define tarname aurora
 %define name gtk-aurora-engine
-%define version 1.2
-%define release %mkrel 3
+%define version 1.4
+%define release %mkrel 1
 
 %define libname %mklibname %{name}
 
@@ -12,13 +12,13 @@ Name:    %{name}
 Version: %{version}
 Release: %{release}
 Source0: %{tarname}-%{version}.tar.bz2
-Source1: Gtkrc_themes.tar.bz2
-License: GPL
+Source1: gtkrc_themes.tar.bz2
+License: GPLv2+
 Group: 	 Graphical desktop/Other
 Url: 	 http://www.gnome-look.org
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires: %{libname} = %{version}
-BuildRequires: gtk2-devel >= 2.10
+BuildRequires: gtk2-devel >= 2.12
 
 %description
 The goal of this theme is to provide a complete and consistent look
