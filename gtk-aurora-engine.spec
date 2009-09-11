@@ -1,7 +1,7 @@
 %define tarname	aurora-gtk-engine
 %define name	gtk-aurora-engine
 %define version	1.5
-%define release %mkrel 1
+%define release %mkrel 2
 
 %define libname %mklibname %{name}
 
