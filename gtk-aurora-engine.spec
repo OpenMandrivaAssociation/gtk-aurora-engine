@@ -1,7 +1,7 @@
 %define tarname	aurora-gtk-engine
 %define name	gtk-aurora-engine
 %define version	1.5
-%define release %mkrel 2
+%define release %mkrel 3
 
 %define libname %mklibname %{name}
 
@@ -51,6 +51,9 @@ Library files for %{name}.
 %__tar jfx %SOURCE1 -C %{buildroot}%{_datadir}/themes
 %__mv %{buildroot}%{_datadir}/themes/Aurora %{buildroot}%{_datadir}/themes/Aurora-old
 %__tar jfx %SOURCE2 -C %{buildroot}%{_datadir}/themes
+
+# Fix bug 56215:
+sed -i 's/\(^.*odd_row_color.*\)/\#\1/' %{buildroot}%{_datadir}/themes/Aurora*/gtk-2.0/gtkrc
 
 %clean
 %__rm -rf %{buildroot}
