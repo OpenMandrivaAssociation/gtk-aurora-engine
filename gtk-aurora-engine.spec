@@ -31,6 +31,9 @@ Library files for %{name}.
 tar xf *.tar.bz2
 tar xf *.tar.gz
 
+# Fix bug 56215:
+sed -i 's/\(^.*odd_row_color.*\)/\#\1/' Aurora/gtk-2.0/gtkrc
+
 %build
 pushd aurora-1.5
 %configure2_5x --enable-animation
