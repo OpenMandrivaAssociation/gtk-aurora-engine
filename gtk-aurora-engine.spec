@@ -8,6 +8,7 @@ Release:	2
 License:	GPLv2+
 Url:		http://gnome-look.org/content/show.php/Aurora+Gtk+Engine?content=56438
 Source0:	http://gnome-look.org/CONTENT/content-files/56438-aurora-%{version}.tar.bz2
+Patch0:		animation.diff
 BuildRequires:	gtk2-devel >= 2.12
 Requires:	%{libname} = %{version}
 
@@ -29,6 +30,7 @@ Library files for %{name}.
 %setup -qc %{name}-%{version}
 tar xf *.tar.bz2
 tar xf *.tar.gz
+%apply_patches
 
 # Fix bug 56215:
 sed -i 's/\(^.*odd_row_color.*\)/\#\1/' Aurora/gtk-2.0/gtkrc
