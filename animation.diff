@@ -1,0 +1,12 @@
+--- gtk-aurora-engine-1.5.1/aurora-1.5/src/animation.c	2011-12-07 01:02:04.772820652 +0000
++++ gtk-aurora-engine-1.5.1/aurora-1.5/src/animation.c	2011-12-07 01:01:34.061821560 +0000
+@@ -7,7 +7,8 @@
+ #include "animation.h"
+ 
+ #ifdef HAVE_ANIMATION
+-#include <glib/gtimer.h>
++
++#include <glib.h>
+ 
+ struct _AnimationInfo {
+ 	GTimer *timer;
