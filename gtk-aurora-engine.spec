@@ -4,7 +4,7 @@ Summary:	Aurora engine for Gtk 2.x
 Group:		Graphical desktop/Other
 Name:		gtk-aurora-engine
 Version:	1.5.1
-Release:	2
+Release:	3
 License:	GPLv2+
 Url:		http://gnome-look.org/content/show.php/Aurora+Gtk+Engine?content=56438
 Source0:	http://gnome-look.org/CONTENT/content-files/56438-aurora-%{version}.tar.bz2
@@ -37,6 +37,7 @@ sed -i 's/\(^.*odd_row_color.*\)/\#\1/' Aurora/gtk-2.0/gtkrc
 
 %build
 pushd aurora-1.5
+export LDFLAGS="-lm"
 %configure2_5x --enable-animation
 %make
 popd
