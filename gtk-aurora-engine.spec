@@ -4,7 +4,7 @@ Summary:	Aurora engine for Gtk 2.x
 Group:		Graphical desktop/Other
 Name:		gtk-aurora-engine
 Version:	1.5.1
-Release:	11
+Release:	12
 License:	GPLv2+
 Url:		http://gnome-look.org/content/show.php/Aurora+Gtk+Engine?content=56438
 Source0:	http://gnome-look.org/CONTENT/content-files/56438-aurora-%{version}.tar.bz2
