@@ -30,7 +30,7 @@ Library files for %{name}.
 %setup -qc %{name}-%{version}
 tar xf *.tar.bz2
 tar xf *.tar.gz
-%apply_patches
+%autopatch -p1
 
 # Fix bug 56215:
 sed -i 's/\(^.*odd_row_color.*\)/\#\1/' Aurora/gtk-2.0/gtkrc
