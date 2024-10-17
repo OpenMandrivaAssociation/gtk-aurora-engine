@@ -6,7 +6,7 @@ Name:		gtk-aurora-engine
 Version:	1.5.1
 Release:	13
 License:	GPLv2+
-Url:		http://gnome-look.org/content/show.php/Aurora+Gtk+Engine?content=56438
+Url:		https://gnome-look.org/content/show.php/Aurora+Gtk+Engine?content=56438
 Source0:	http://gnome-look.org/CONTENT/content-files/56438-aurora-%{version}.tar.bz2
 Patch0:		animation.diff
 BuildRequires:	pkgconfig(gtk+-2.0)
