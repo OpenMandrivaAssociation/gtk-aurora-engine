@@ -9,6 +9,11 @@ License:	GPLv2+
 Url:		https://gnome-look.org/content/show.php/Aurora+Gtk+Engine?content=56438
 Source0:	http://gnome-look.org/CONTENT/content-files/56438-aurora-%{version}.tar.bz2
 Patch0:		animation.diff
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(gtk+-2.0)
 Requires:	%{libname} = %{version}
 
